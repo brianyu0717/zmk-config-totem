@@ -31,7 +31,7 @@
             key-positions = <2 3 6>;
         };
 
-        workEmail {
+        work-email {
             bindings = <&wem>;
             key-positions = <1 2 6>;
         };
@@ -61,8 +61,8 @@
             bindings = <
          &kp Q       &kp W       &kp E        &kp R        &kp T           &kp Y    &kp U        &kp I            &kp O         &kp P
          &kp A       &kp S       &kp D        &kp F        &kp G           &kp H    &kp J        &kp K            &kp L         &kp SEMI
-&kp TAB  &mt LGUI Z  &mt LALT X  &mt LCTRL C  &mt LSHFT V  &kp B           &kp N    &mt LSHFT M  &mt LCTRL COMMA  &mt LALT DOT  &mt LGUI FSLH  &kp LCTRL
-                                 &kp ESC      &kp ENTER    &lt FN SPACE    &mo SYM  &mo NAV      &kp LGUI
+&kp TAB  &mt LGUI Z  &mt LALT X  &mt LCTRL C  &mt LSHFT V  &kp B           &kp N    &mt LSHFT M  &mt LCTRL COMMA  &mt LALT DOT  &mt LGUI FSLH  &kp BSPC
+                                 &kp LCTRL      &kp ENTER    &lt FN SPACE    &mo SYM  &mo NAV      &kp LGUI
             >;
         };
 
@@ -105,6 +105,5 @@
                                         &trans  &trans  &trans    &trans         &trans          &trans
             >;
         };
-        
     };
 };
