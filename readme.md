@@ -1,3 +1,7 @@
+# PREFERRED USAGE
+
+https://nickcoutsos.github.io/keymap-editor/
+
 ## HOW TO USE
 
 - adjust the totem.keymap file (find all the keycodes on [the zmk docs pages](https://zmk.dev/docs/codes/))
