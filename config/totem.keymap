@@ -31,7 +31,7 @@
             key-positions = <2 3 6>;
         };
 
-        workEmail {
+        work-email {
             bindings = <&wem>;
             key-positions = <1 2 6>;
         };
@@ -105,6 +105,5 @@
                                         &trans  &trans  &trans    &trans         &trans          &trans
             >;
         };
-        
     };
 };
