@@ -57,6 +57,7 @@ while true; do
     sleep 5
 done
 
-echo "downloading" $LATEST
+echo "Downloading" $LATEST
 rm -rf $DOWNLOAD_DIR
 gh run download $ID -R brianyu0717/zmk-config-totem --dir $DOWNLOAD_DIR
+echo "Download completed"
