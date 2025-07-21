@@ -1,9 +1,9 @@
 #! /bin/bash
 
 usage() {
-    echo "-c [just commit, prompt for message]" 
-    echo "-a [commit amend]" 
-    echo "-n [commit amend no-edit]"
+    echo "no args: just commit, prompts for commit message" 
+    echo "-a [commit amend], prompts for commit message" 
+    echo "-n [commit amend no-edit], use current commit message"
 }
 
 while test $# -gt 0; do
@@ -60,4 +60,5 @@ done
 echo "Downloading" $LATEST
 rm -rf $DOWNLOAD_DIR
 gh run download $ID -R brianyu0717/zmk-config-totem --dir $DOWNLOAD_DIR
-echo "Download completed"
+echo "Download completed. Opening download/firmware directory..."
+xdg-open download/firmware

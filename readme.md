@@ -1,8 +1,17 @@
 # Graphical editor
 
+Requires github login in browser
+
 https://nickcoutsos.github.io/keymap-editor/
 
-## HOW TO USE
+# Edit files directly
+
+## Ensure installed
+
+- `jq`
+- `gh` - github cli, logged in
+
+## Steps
 
 - adjust the totem.keymap file (find all the keycodes on [the zmk docs pages](https://zmk.dev/docs/codes/))
 - run script `push_and_download.sh`, flags `-a` amend will prompt for commit message; `-n` amend no 
