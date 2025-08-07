@@ -106,9 +106,9 @@
         left_hand {
             bindings = <
         &trans    &kp LC(W)  &kp LC(PG_UP)  &kp LC(PG_DN)  &trans            &trans  &trans  &trans  &trans  &trans
-        &kp LEFT  &kp RIGHT  &kp UP         &kp PG_UP      &msc SCRL_UP      &trans  &trans  &trans  &trans  &trans
+        &kp LEFT  &kp RIGHT  &kp UP         &kp PG_UP      &msc SCRL_UP      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &trans  &trans    &trans     &kp DOWN       &kp PG_DN      &msc SCRL_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans         &trans         &trans            &trans  &trans  &trans
+                             &trans         &trans         &trans            &mkp MCLK  &mkp LCLK  &mkp RCLK
             >;
         };
     };
