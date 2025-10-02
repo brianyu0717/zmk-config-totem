@@ -56,10 +56,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-        &kp Q       &kp W       &kp E        &kp R        &kp T           &kp Y    &kp U        &kp I            &kp O         &kp P
-        &kp A       &kp S       &kp D        &kp F        &kp G           &kp H    &kp J        &kp K            &kp L         &kp SEMI
-&tog 5  &mt LGUI Z  &mt LALT X  &mt LCTRL C  &mt LSHFT V  &kp B           &kp N    &mt LSHFT M  &mt LCTRL COMMA  &mt LALT DOT  &mt LGUI FSLH  &kp BSPC
-                                &lt 5 ESC    &kp ENTER    &lt FN SPACE    &mo SYM  &mo NAV      &kp LGUI
+            &kp Q       &kp W       &kp E            &kp R        &kp T           &kp Y    &kp U        &kp I            &kp O         &kp P
+            &kp A       &kp S       &kp D            &kp F        &kp G           &kp H    &kp J        &kp K            &kp L         &kp SEMI
+&caps_word  &mt LGUI Z  &mt LALT X  &mt LCTRL C      &mt LSHFT V  &kp B           &kp N    &mt LSHFT M  &mt LCTRL COMMA  &mt LALT DOT  &mt LGUI FSLH  &kp BSPC
+                                    &tog 5           &kp ENTER    &lt FN SPACE    &mo SYM  &mo NAV      &kp LGUI
             >;
         };
 
@@ -108,7 +108,7 @@
         &trans    &kp LC(W)  &kp LC(PG_UP)  &kp LC(PG_DN)  &trans            &trans  &trans  &trans  &trans  &trans
         &kp LEFT  &kp RIGHT  &kp UP         &kp PG_UP      &msc SCRL_UP      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &trans  &trans    &trans     &kp DOWN       &kp PG_DN      &msc SCRL_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans         &trans         &trans            &mkp MCLK  &mkp LCLK  &mkp RCLK
+                             &trans         &kp ESC        &trans            &mkp MCLK  &mkp LCLK  &mkp RCLK
             >;
         };
     };

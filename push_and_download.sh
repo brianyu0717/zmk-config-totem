@@ -47,15 +47,21 @@ echo "Wait a little bit for github to start the workflow to build the new firmwa
 sleep 10
 
 while true; do
-    LATEST=$(gh run list -R brianyu0717/zmk-config-totem --json databaseId\,displayTitle\,status | jq '.[0]')
+    LATEST=$(gh run list -R brianyu0717/zmk-config-totem --json databaseId\,displayTitle\,status\,conclusion | jq '.[0]')
     ID=$(echo $LATEST | jq '.databaseId')
     STATUS=$(echo $LATEST | jq '.status' | tr -d '"')
+    CONCLUSION=$(echo $LATEST | jq '.conclusion' | tr -d '"')
     if [[ $STATUS == 'completed' ]] then
         break
     fi
     echo "Waiting for status to transition from" $STATUS "to completed for " $(echo $LATEST | jq '.displayTitle')
     sleep 5
 done
+
+if [[ $CONCLUSION != 'success' ]] then
+  echo "Unexpected error during build. Conclusion is $CONCLUSION"
+  exit 1
+fi
 
 echo "Downloading" $LATEST
 rm -rf $DOWNLOAD_DIR
