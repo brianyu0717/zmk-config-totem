@@ -1,7 +1,7 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-CONFIG_ZMK_SETTINGS_RESET_ON_START=y
+#CONFIG_ZMK_SETTINGS_RESET_ON_START=y
 
 if SHIELD_TOTEM_LEFT
 
